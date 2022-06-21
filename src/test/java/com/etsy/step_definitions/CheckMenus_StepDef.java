@@ -1,7 +1,9 @@
 package com.etsy.step_definitions;
 
 import com.etsy.pages.EtsyHomePage;
+import com.etsy.utilities.ConfigurationReader;
 import com.etsy.utilities.Driver;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 
@@ -21,6 +23,11 @@ public class CheckMenus_StepDef {
         actions.moveToElement(etsyHomePage.artAndCollectibles).perform();
         actions.moveToElement(etsyHomePage.craftSuppliesAndTools).perform();
 
+    }
+
+    @Given("user in on the etsy home page")
+    public void user_in_on_the_etsy_home_page() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("web.site"));
     }
 
 
