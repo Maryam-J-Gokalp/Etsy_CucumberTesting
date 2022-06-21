@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/vasyafomiuk/demo-project.git'
+        git 'https://github.com/YasinDeger48/Etsy_Testing_with_Cucumber.git'
     }
 
     stage('Run tests'){

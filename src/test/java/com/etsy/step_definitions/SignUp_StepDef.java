@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignUp_StepDef {
 
-/*    EtsyHomePage etsyHomePage = new EtsyHomePage();
+    EtsyHomePage etsyHomePage = new EtsyHomePage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
     @Given("user in on the etsy home page")
@@ -68,8 +68,8 @@ public class SignUp_StepDef {
         String expectedName = ConfigurationReader.getProperty("name");
         String actualName = BrowserUtils.getText();
 
-        Assert.assertTrue(expectedName.contains(actualName));
 
 
-    }*/
+
+    }
 }
