@@ -1,5 +1,7 @@
 package com.etsy.utilities;
 
+import org.openqa.selenium.By;
+
 public class BrowserUtils {
     /**
      * This method only using for static waiting
@@ -14,4 +16,15 @@ public class BrowserUtils {
 
         }
     }
+
+
+    public static String getText(){
+
+        String result = Driver.getDriver().findElement(By.xpath("(//a[.='" + ConfigurationReader.getProperty("name") + "'])[1]")).getText();
+
+        return result;
+
+    }
+
+
 }

@@ -1,6 +1,6 @@
 Feature: user sign up process
 
-  @wip
+  #@wip
   Scenario: user sign up etsy home page
     Given user in on the etsy home page
     When user clicks the sign in button

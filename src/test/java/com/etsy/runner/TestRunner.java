@@ -8,14 +8,14 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "pretty",
+                //"pretty",
                 "html:target/cucumber-report/cucumber.report.html",
                 "rerun:target/cucumber-report/cucumber.txt"
         },
         features = "src/test/resources/features",
         glue = "com/etsy/step_definitions",
         dryRun = false,
-        tags = ""
+        tags = "@wip"
 
 )
 
