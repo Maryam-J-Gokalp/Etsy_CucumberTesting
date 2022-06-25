@@ -1,6 +1,7 @@
 package com.etsy.step_definitions;
 
 import com.etsy.pages.EtsyHomePage;
+import com.etsy.utilities.BrowserUtils;
 import com.etsy.utilities.ConfigurationReader;
 import com.etsy.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -12,18 +13,19 @@ public class CheckMenus_StepDef {
     EtsyHomePage etsyHomePage = new EtsyHomePage();
     Actions actions = new Actions(Driver.getDriver());
 
-    @When("user hover over the {string}")
+/*    @When("user hover over the {string}")
     public void user_hover_over_the(String string) {
 
         actions.moveToElement(etsyHomePage.jeweleryAndAccessories).perform();
         actions.moveToElement(etsyHomePage.clothingAndShoes).perform();
+
         actions.moveToElement(etsyHomePage.homeAndLiving).perform();
         actions.moveToElement(etsyHomePage.weddingAndParty).perform();
         actions.moveToElement(etsyHomePage.toysAndEntertainment).perform();
         actions.moveToElement(etsyHomePage.artAndCollectibles).perform();
         actions.moveToElement(etsyHomePage.craftSuppliesAndTools).perform();
 
-    }
+    }*/
 
     @Given("user in on the etsy home page")
     public void user_in_on_the_etsy_home_page() {
@@ -31,4 +33,19 @@ public class CheckMenus_StepDef {
     }
 
 
+    @When("user hover over the menu")
+    public void userHoverOverTheMenu() {
+
+
+
+
+
+    }
+
+    @When("user hover over the menu {string}")
+    public void userHoverOverTheMenu(String arg0) {
+
+
+
+    }
 }
