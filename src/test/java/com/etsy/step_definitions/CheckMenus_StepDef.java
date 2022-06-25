@@ -29,7 +29,7 @@ public class CheckMenus_StepDef {
 
     @Given("user in on the etsy home page")
     public void user_in_on_the_etsy_home_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("web.site"));
+        //Driver.getDriver().get(ConfigurationReader.getProperty("web.site"));
     }
 
 
