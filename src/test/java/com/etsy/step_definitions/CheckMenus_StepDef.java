@@ -16,6 +16,7 @@ public class CheckMenus_StepDef {
 /*    @When("user hover over the {string}")
     public void user_hover_over_the(String string) {
 
+
         actions.moveToElement(etsyHomePage.jeweleryAndAccessories).perform();
         actions.moveToElement(etsyHomePage.clothingAndShoes).perform();
 
@@ -35,10 +36,6 @@ public class CheckMenus_StepDef {
 
     @When("user hover over the menu")
     public void userHoverOverTheMenu() {
-
-
-
-
 
     }
 

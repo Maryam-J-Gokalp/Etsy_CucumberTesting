@@ -12,6 +12,7 @@ public class ConfigurationReader {
     static {
 
 
+
         try {
             InputStream file = new FileInputStream("configuration.properties");
             prop.load(file);

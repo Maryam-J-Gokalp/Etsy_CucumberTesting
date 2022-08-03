@@ -8,7 +8,6 @@ public class BrowserUtils {
      * accept seconds
      * @param seconds
      */
-
     public static void sleep(int seconds){
         try {
             Thread.sleep(seconds*1000);
